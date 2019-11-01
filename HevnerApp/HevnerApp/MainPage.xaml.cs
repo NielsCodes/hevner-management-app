@@ -14,6 +14,9 @@ namespace HevnerApp
         public MainPage()
         {
             InitializeComponent();
+            
+//            Resize viewport when keyboard is opened (Prevents keyboard from blocking inputs)
+            App.Current.On<Android>().UseWindowSoftInputModeAdjust(WindowSoftInputModeAdjust.Resize);
         }
     }
 }
