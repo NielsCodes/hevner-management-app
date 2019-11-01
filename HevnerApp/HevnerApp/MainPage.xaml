@@ -4,11 +4,23 @@
              xmlns:local="clr-namespace:HevnerApp"
              x:Class="HevnerApp.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+    <StackLayout
+        VerticalOptions="Center"
+        Margin="25">
+        
+        <Image Source="https://www.scriptium.nl/wp-content/uploads/2018/08/logo-zuyd-hogeschool.png" />
+        
+        <!-- Email entry to log in -->
+        <Label Text="Email"/>
+        <Entry x:Name="EmailEntry"></Entry>
+        
+        <!-- Password entry to log in -->
+        <Label Text="Password"/>
+        <Entry x:Name="PassEntry"></Entry>
+        
+        <!-- Button to trigger login -->
+        <Button x:Name="LogInButton" Text="Log in"></Button>
+        
     </StackLayout>
 
 </ContentPage>
