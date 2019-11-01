@@ -13,16 +13,21 @@
         
         <!-- Email entry to log in -->
         <Label Text="Email"/>
-        <Entry x:Name="EmailEntry"></Entry>
+        <Entry 
+            x:Name="EmailEntry"
+            Placeholder="name@zuyd.nl"></Entry>
         
         <!-- Password entry to log in -->
         <Label Text="Password"/>
-        <Entry x:Name="PassEntry"></Entry>
+        <Entry 
+            x:Name="PassEntry"
+            Placeholder="······"></Entry>
         
         <!-- Button to trigger login -->
         <Button 
             x:Name="LogInButton" 
-            Text="Log in"></Button>
+            Text="Log in"
+            Margin="0, 20, 0, 0"></Button>
         
     </StackLayout>
 
