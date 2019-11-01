@@ -3,6 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HevnerApp.App">
     <Application.Resources>
-
+        <ResourceDictionary>
+            
+            <!-- HEX color code for Zuyd red color -->
+            <Color x:Key="zuydRed">#ED0E28</Color>
+            
+            <Style TargetType="Button">
+                <Setter Property="BackgroundColor" Value="{StaticResource zuydRed}"></Setter>
+                <Setter Property="TextColor" Value="White"></Setter>
+            </Style>
+            
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

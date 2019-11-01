@@ -20,7 +20,9 @@
         <Entry x:Name="PassEntry"></Entry>
         
         <!-- Button to trigger login -->
-        <Button x:Name="LogInButton" Text="Log in"></Button>
+        <Button 
+            x:Name="LogInButton" 
+            Text="Log in"></Button>
         
     </StackLayout>
 
