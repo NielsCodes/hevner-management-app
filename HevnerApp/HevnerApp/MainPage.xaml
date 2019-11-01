@@ -15,20 +15,28 @@
         <Label Text="Email"/>
         <Entry 
             x:Name="EmailEntry"
-            Placeholder="name@zuyd.nl"></Entry>
+            Placeholder="naam@zuyd.nl"></Entry>
         
         <!-- Password entry to log in -->
-        <Label Text="Password"/>
+        <Label Text="Wachtwoord"/>
         <Entry 
             x:Name="PassEntry"
             Placeholder="······"></Entry>
+        
+        <Button 
+            Text="Wachtwoord vergeten"
+            BackgroundColor="Transparent"
+            TextColor="DodgerBlue"
+            Padding="0"
+            Clicked=""
+            />
         
         <!-- Button to trigger login -->
         <Button 
             x:Name="LogInButton" 
             Text="Log in"
             Margin="0, 20, 0, 0"
-            Clicked="LogInButton_OnClicked"></Button>
+            Clicked="LogInButton_OnClicked"/>
         
     </StackLayout>
 

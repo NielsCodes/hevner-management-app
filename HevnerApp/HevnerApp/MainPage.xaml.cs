@@ -23,5 +23,10 @@ namespace HevnerApp
         {
             Navigation.PushAsync(new ProjectsListPage());
         }
+
+        private void Button_OnClicked(object sender, EventArgs e)
+        {
+            throw new NotImplementedException("Password reset page not yet implemented");
+        }
     }
 }
