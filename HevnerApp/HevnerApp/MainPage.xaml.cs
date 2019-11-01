@@ -18,5 +18,10 @@ namespace HevnerApp
 //            Resize viewport when keyboard is opened (Prevents keyboard from blocking inputs)
             App.Current.On<Android>().UseWindowSoftInputModeAdjust(WindowSoftInputModeAdjust.Resize);
         }
+
+        private void LogInButton_OnClicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ProjectsListPage());
+        }
     }
 }

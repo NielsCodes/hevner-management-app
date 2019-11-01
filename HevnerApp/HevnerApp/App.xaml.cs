@@ -12,7 +12,10 @@ namespace HevnerApp
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new MainPage())
+            {
+                BarTextColor = Color.White
+            };
         }
 
         protected override void OnStart()

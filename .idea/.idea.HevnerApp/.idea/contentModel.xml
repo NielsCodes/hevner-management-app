@@ -29,6 +29,8 @@
             </e>
           </e>
         </e>
+        <e p="ProjectsListPage.xaml" t="Include" />
+        <e p="ProjectsListPage.xaml.cs" t="Include" />
       </e>
       <e p="HevnerApp/HevnerApp.Android" t="IncludeRecursive">
         <e p="Assets" t="Include">
