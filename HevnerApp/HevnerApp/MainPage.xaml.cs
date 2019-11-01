@@ -15,7 +15,10 @@ namespace HevnerApp
         {
             InitializeComponent();
             
-//            Resize viewport when keyboard is opened (Prevents keyboard from blocking inputs)
+            // Disable the header for the login page
+            NavigationPage.SetHasNavigationBar(this, false);
+            
+            // Resize viewport when keyboard is opened (Prevents keyboard from blocking inputs)
             App.Current.On<Android>().UseWindowSoftInputModeAdjust(WindowSoftInputModeAdjust.Resize);
         }
 
@@ -24,9 +27,10 @@ namespace HevnerApp
             Navigation.PushAsync(new ProjectsListPage());
         }
 
-        private void Button_OnClicked(object sender, EventArgs e)
+
+        private void PasswordResetLink_OnClicked(object sender, EventArgs e)
         {
-            throw new NotImplementedException("Password reset page not yet implemented");
+            Navigation.PushAsync(new PasswordResetPage());
         }
     }
 }

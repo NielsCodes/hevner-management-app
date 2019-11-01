@@ -29,6 +29,8 @@
             </e>
           </e>
         </e>
+        <e p="PasswordResetPage.xaml" t="Include" />
+        <e p="PasswordResetPage.xaml.cs" t="Include" />
         <e p="ProjectsListPage.xaml" t="Include" />
         <e p="ProjectsListPage.xaml.cs" t="Include" />
       </e>

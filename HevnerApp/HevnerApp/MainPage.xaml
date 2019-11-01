@@ -23,13 +23,6 @@
             x:Name="PassEntry"
             Placeholder="······"></Entry>
         
-        <Button 
-            Text="Wachtwoord vergeten"
-            BackgroundColor="Transparent"
-            TextColor="DodgerBlue"
-            Padding="0"
-            Clicked=""
-            />
         
         <!-- Button to trigger login -->
         <Button 
@@ -37,6 +30,16 @@
             Text="Log in"
             Margin="0, 20, 0, 0"
             Clicked="LogInButton_OnClicked"/>
+        
+        <!-- Password reset link -->
+        <Button 
+            x:Name="PasswordResetLink"
+            Text="Wachtwoord vergeten?"
+            BackgroundColor="Transparent"
+            TextColor="DodgerBlue"
+            Padding="0"
+            Clicked="PasswordResetLink_OnClicked"
+            />
         
     </StackLayout>
 
