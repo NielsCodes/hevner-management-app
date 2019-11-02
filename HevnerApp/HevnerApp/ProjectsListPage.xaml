@@ -3,6 +3,32 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HevnerApp.ProjectsListPage">
+    
+    <!-- Toolbar items to access new pages -->
+    <ContentPage.ToolbarItems>
+        
+        <!-- Secondary order to appear as context menu -->
+        <ToolbarItem 
+            Text="Add project" 
+            Order="Secondary"
+            x:Name="AddProjectToolbarItem"
+            Clicked="AddProjectToolbarItem_OnClicked"/>
+        
+        <ToolbarItem 
+            Text="Completed projects" 
+            Order="Secondary"
+            x:Name="ShowCompletedProjectsToolbarItem"
+            Clicked="ShowCompletedProjectsToolbarItem_OnClicked"/>
+        
+        <ToolbarItem 
+            Text="Help" 
+            Order="Secondary"
+            x:Name="ShowHelpToolbarItem"
+            Clicked="ShowHelpToolbarItem_OnClicked"/>
+        
+    </ContentPage.ToolbarItems>
+    
+    
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Hello, world!"

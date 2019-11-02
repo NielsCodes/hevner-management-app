@@ -18,5 +18,20 @@ namespace HevnerApp
             InitializeComponent();
             Title = "Projects";
         }
+
+        private void AddProjectToolbarItem_OnClicked(object sender, EventArgs e)
+        {
+            throw new NotImplementedException("New project page not yet implemented");
+        }
+
+        private void ShowCompletedProjectsToolbarItem_OnClicked(object sender, EventArgs e)
+        {
+            throw new NotImplementedException("Previously completed projects page not yet implemented");
+        }
+
+        private void ShowHelpToolbarItem_OnClicked(object sender, EventArgs e)
+        {
+            throw new NotImplementedException("Help page not yet implemented");
+        }
     }
 }
