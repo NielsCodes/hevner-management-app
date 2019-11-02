@@ -15,13 +15,15 @@
         <Label Text="Email"/>
         <Entry 
             x:Name="EmailEntry"
-            Placeholder="naam@zuyd.nl"></Entry>
+            Placeholder="naam@zuyd.nl"
+            Keyboard="Email"/>
         
         <!-- Password entry to log in -->
         <Label Text="Wachtwoord"/>
         <Entry 
             x:Name="PassEntry"
-            Placeholder="······"></Entry>
+            Placeholder="······"
+            IsPassword="True"/>
         
         
         <!-- Button to trigger login -->
