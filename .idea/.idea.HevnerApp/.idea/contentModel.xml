@@ -23,6 +23,7 @@
         <e p="MainPage.xaml" t="Include" />
         <e p="MainPage.xaml.cs" t="Include" />
         <e p="Models" t="Include">
+          <e p="Note.cs" t="Include" />
           <e p="Project.cs" t="Include" />
           <e p="Subtask.cs" t="Include" />
           <e p="Task.cs" t="Include" />
