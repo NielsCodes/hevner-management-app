@@ -21,6 +21,9 @@
         <e p="App.xaml" t="Include" />
         <e p="App.xaml.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
+        <e p="DataAccessLayer" t="Include">
+          <e p="DAL.cs" t="Include" />
+        </e>
         <e p="HelpPage.xaml" t="Include" />
         <e p="HelpPage.xaml.cs" t="Include" />
         <e p="HevnerApp.csproj" t="IncludeRecursive" />
