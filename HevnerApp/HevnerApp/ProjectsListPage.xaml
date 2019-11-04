@@ -31,7 +31,7 @@
     
     <ContentPage.Content>
         
-        <ListView x:Name="ProjectsListView">
+        <ListView x:Name="ProjectsListView" ItemTapped="ProjectsListView_OnItemTapped">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <TextCell 
