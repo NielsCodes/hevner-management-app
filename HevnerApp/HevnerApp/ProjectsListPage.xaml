@@ -30,10 +30,17 @@
     
     
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Hello, world!"
-                   VerticalOptions="CenterAndExpand"
-                   HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        
+        <ListView x:Name="ProjectsListView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell 
+                        Text="{Binding Name}" 
+                        Detail="{Binding Description}"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+            
+        </ListView>
+        
     </ContentPage.Content>
 </ContentPage>

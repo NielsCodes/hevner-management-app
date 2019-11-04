@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using HevnerApp.Models;
+using HevnerApp.Templates;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -12,11 +13,17 @@ namespace HevnerApp
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ProjectsListPage : ContentPage
     {
-        
+
         public ProjectsListPage()
         {
             InitializeComponent();
             Title = "Projecten";
+
+            // TODO: 1. Implement custom template for three line items
+            // ProjectsListView.ItemTemplate = new DataTemplate(typeof(CustomCell));
+            
+            ProjectsListView.ItemsSource = App.AppDal.Projects;
+
         }
 
         private void AddProjectToolbarItem_OnClicked(object sender, EventArgs e)
