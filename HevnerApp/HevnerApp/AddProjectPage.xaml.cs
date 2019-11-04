@@ -16,7 +16,16 @@ namespace HevnerApp
         {
             InitializeComponent();
 
-            Title = "Nieuw project";
+            Title = "Project toevoegen";
+        }
+
+        private void AddProjectButton_OnClicked(object sender, EventArgs e)
+        {
+            // Logic to add project to database
+            
+            
+            // Redirect user back to projects overview
+            Navigation.PopAsync();
         }
     }
 }

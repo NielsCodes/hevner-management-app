@@ -5,9 +5,28 @@
              x:Class="HevnerApp.AddProjectPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Hello, world!"
-                   VerticalOptions="CenterAndExpand"
-                   HorizontalOptions="CenterAndExpand" />
+            
+            <Label Text="Projectnaam"/>
+            <Entry
+                x:Name="ProjectNameEntry"
+                Placeholder="Mijn onderzoeksproject" />
+            
+            <Editor 
+                x:Name="ProjectDescriptionEditor" 
+                Placeholder="Beschrijving van het onderwerp" />
+
+            <Label Text="Startdatum" />
+            <DatePicker x:Name="StartDatePicker"/>
+            
+            <Label Text="Deadline" />
+            <DatePicker x:Name="DeadlineDatePicker"/>
+            
+            <Button 
+                Text="Project toevoegen"
+                x:Name="AddProjectButton"
+                Clicked="AddProjectButton_OnClicked"
+                Margin="0, 40, 0, 0"/>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

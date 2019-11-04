@@ -16,6 +16,7 @@ namespace HevnerApp
             {
                 BarTextColor = Color.White
             };
+            
         }
 
         protected override void OnStart()
