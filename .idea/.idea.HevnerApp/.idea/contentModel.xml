@@ -45,6 +45,8 @@
         </e>
         <e p="PasswordResetPage.xaml" t="Include" />
         <e p="PasswordResetPage.xaml.cs" t="Include" />
+        <e p="ProjectPage.xaml" t="Include" />
+        <e p="ProjectPage.xaml.cs" t="Include" />
         <e p="ProjectsListPage.xaml" t="Include" />
         <e p="ProjectsListPage.xaml.cs" t="Include" />
         <e p="Templates" t="Include">
