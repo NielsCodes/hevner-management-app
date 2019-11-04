@@ -22,9 +22,18 @@
     <item name="windowActionModeOverlay">true</item>
     <item name="android:statusBarColor">#ED0E28</item>
 
+    <item name="android:colorPressedHighlight">@color/ListViewSelected</item>
+    <item name="android:colorLongPressedHighlight">@color/ListViewHighlighted</item>
+    <item name="android:colorFocusedHighlight">@color/ListViewSelected</item>
+    <item name="android:colorActivatedHighlight">@color/ListViewSelected</item>
+    <item name="android:activatedBackgroundIndicator">@color/ListViewSelected</item>
+
     <item name="android:datePickerDialogTheme">@style/AppCompatDialogStyle</item>
   </style>
 
+  <color name="ListViewSelected">#ED0E28</color>
+  <color name="ListViewHighlighted">#ED0E28</color>
+  
   <style name="AppCompatDialogStyle" parent="Theme.AppCompat.Light.Dialog">
     <item name="colorAccent">#ED0E28</item>
   </style>
