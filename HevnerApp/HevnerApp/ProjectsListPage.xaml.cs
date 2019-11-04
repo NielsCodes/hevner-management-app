@@ -31,7 +31,7 @@ namespace HevnerApp
 
         private void ShowHelpToolbarItem_OnClicked(object sender, EventArgs e)
         {
-            throw new NotImplementedException("Help page not yet implemented");
+            Navigation.PushAsync(new HelpPage());
         }
     }
 }
