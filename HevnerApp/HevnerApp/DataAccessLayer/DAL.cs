@@ -5,7 +5,7 @@ namespace HevnerApp.DataAccessLayer
 {
     public class DAL
     {
-        
+
         private List<Project> _projects = new List<Project>();
         
         // Get all projects and related data
@@ -69,6 +69,13 @@ namespace HevnerApp.DataAccessLayer
             _projects.Add(project2);
             _projects.Add(project3);
 
+        }
+        
+        // Getter and setter
+        public List<Project> Projects
+        {
+            get => _projects;
+            set => _projects = value;
         }
         
     }
