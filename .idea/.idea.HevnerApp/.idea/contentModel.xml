@@ -16,6 +16,8 @@
     </e>
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="HevnerApp/HevnerApp" t="IncludeRecursive">
+        <e p="AddProjectPage.xaml" t="Include" />
+        <e p="AddProjectPage.xaml.cs" t="Include" />
         <e p="App.xaml" t="Include" />
         <e p="App.xaml.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />

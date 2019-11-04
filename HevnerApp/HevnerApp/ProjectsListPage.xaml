@@ -9,13 +9,13 @@
         
         <!-- Secondary order to appear as context menu -->
         <ToolbarItem 
-            Text="Add project" 
+            Text="Project toevoegen" 
             Order="Secondary"
             x:Name="AddProjectToolbarItem"
             Clicked="AddProjectToolbarItem_OnClicked"/>
         
         <ToolbarItem 
-            Text="Completed projects" 
+            Text="Afgeronde projecten" 
             Order="Secondary"
             x:Name="ShowCompletedProjectsToolbarItem"
             Clicked="ShowCompletedProjectsToolbarItem_OnClicked"/>

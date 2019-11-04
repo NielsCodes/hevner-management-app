@@ -16,12 +16,12 @@ namespace HevnerApp
         public ProjectsListPage()
         {
             InitializeComponent();
-            Title = "Projects";
+            Title = "Projecten";
         }
 
         private void AddProjectToolbarItem_OnClicked(object sender, EventArgs e)
         {
-            throw new NotImplementedException("New project page not yet implemented");
+            Navigation.PushAsync(new AddProjectPage());
         }
 
         private void ShowCompletedProjectsToolbarItem_OnClicked(object sender, EventArgs e)
