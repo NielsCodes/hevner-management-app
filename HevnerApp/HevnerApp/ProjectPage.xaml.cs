@@ -22,9 +22,38 @@ namespace HevnerApp
                 throw new ArgumentException("Project argument not passed");
             }
 
-            List<Task> allTasks = project.Tasks;
+            Title = project.Name;
             
-            Children.Add(new TasksPage( "Alle taken" ,allTasks));
+            List<Task> allTasks = project.Tasks;
+            List<Task> relevanceTasks = new List<Task>();
+            List<Task> designTasks = new List<Task>();
+            List<Task> rigorTasks = new List<Task>();
+            
+            // Loop through all tasks to filter in which cycle they are, but only if there are tasks
+            if (allTasks.Count > 0)
+            {
+                foreach (Task task in allTasks)
+                {
+                    switch (task.Cycle)
+                    {
+                        case "relevance":
+                            relevanceTasks.Add(task);
+                            break;
+                        case "design":
+                            designTasks.Add(task);
+                            break;
+                        case "rigor":
+                            rigorTasks.Add(task);
+                            break;
+                    }
+                }
+                
+                Children.Add(new TasksPage("Alle cycli", allTasks));
+                Children.Add(new TasksPage("Relevance", relevanceTasks));
+                Children.Add(new TasksPage("Design", designTasks));
+                Children.Add(new TasksPage("Rigor", rigorTasks));
+                
+            }
             
         }
     }
