@@ -13,7 +13,7 @@ namespace HevnerApp.Models
         private int _createdBy;
         private string _createdAt;
         private string _status;
-
+        private string _cycle;
         private List<Note> _notes = new List<Note>();
         private List<Subtask> _subtasks = new List<Subtask>();
 
@@ -30,7 +30,7 @@ namespace HevnerApp.Models
         }
         
         // Constructor
-        public Task(int id, int projectId, string name, string description, int createdBy, string createdAt, string status)
+        public Task(int id, int projectId, string name, string description, int createdBy, string createdAt, string status, string cycle)
         {
             _id = id;
             _projectId = projectId;
@@ -39,6 +39,7 @@ namespace HevnerApp.Models
             _createdBy = createdBy;
             _createdAt = createdAt;
             _status = status;
+            _cycle = cycle;
         }
         
         // Getters and setters
@@ -82,6 +83,12 @@ namespace HevnerApp.Models
         {
             get => _status;
             set => _status = value;
+        }
+        
+        public string Cycle
+        {
+            get => _cycle;
+            set => _cycle = value;
         }
 
         public List<Note> Notes

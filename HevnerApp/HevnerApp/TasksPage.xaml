@@ -2,23 +2,22 @@
 
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="HevnerApp.ProjectsListPage">
+             x:Class="HevnerApp.TasksPage">
     
-    <!-- Toolbar items to access new pages -->
     <ContentPage.ToolbarItems>
         
         <!-- Secondary order to appear as context menu -->
         <ToolbarItem 
-            Text="Project toevoegen" 
+            Text="Taak toevoegen" 
             Order="Secondary"
             x:Name="AddProjectToolbarItem"
-            Clicked="AddProjectToolbarItem_OnClicked"/>
+            Clicked="AddTaskToolbarItem_OnClicked"/>
         
         <ToolbarItem 
-            Text="Afgeronde projecten" 
+            Text="Notities" 
             Order="Secondary"
             x:Name="ShowCompletedProjectsToolbarItem"
-            Clicked="ShowCompletedProjectsToolbarItem_OnClicked"/>
+            Clicked="ShowNotesToolbarItem_OnClicked"/>
         
         <ToolbarItem 
             Text="Help" 
@@ -28,10 +27,11 @@
         
     </ContentPage.ToolbarItems>
     
-    
     <ContentPage.Content>
-        
-        <ListView x:Name="ProjectsListView" ItemTapped="ProjectsListView_OnItemTapped">
+
+            
+        <ListView x:Name="TaskListView" ItemTapped="TaskListView_OnItemTapped">
+            
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <TextCell 
@@ -41,6 +41,8 @@
             </ListView.ItemTemplate>
             
         </ListView>
-        
+            
+
     </ContentPage.Content>
+    
 </ContentPage>

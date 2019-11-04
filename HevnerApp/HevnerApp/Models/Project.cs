@@ -33,7 +33,7 @@ namespace HevnerApp.Models
         public Project(int id, string name, string description, string startDate, string deadline, int createdBy, string createdAt, bool hasFinished)
         {
             _id = id;
-            _name = name;
+            Name = name;
             _description = description;
             _startDate = startDate;
             _deadline = deadline;

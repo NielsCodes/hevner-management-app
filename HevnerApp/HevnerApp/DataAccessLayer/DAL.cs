@@ -24,11 +24,11 @@ namespace HevnerApp.DataAccessLayer
             Project project3 = new Project(3, "Onderzoek 3", "Lorem ipsum 3", "01-01-2019", "01-01-2020", 1, "01-01-2019", true);
 
             // Create Tasks
-            Task task1 = new Task(1, 1, "To-do task", "Lorem ipsum dolor sit amet", 1, "01-01-2019", "todo");
-            Task task2 = new Task(2, 1, "In progress task", "Lorem ipsum dolor sit amet", 1, "01-01-2019", "progress");
-            Task task3 = new Task(3, 1, "Done task", "Lorem ipsum dolor sit amet", 1, "01-01-2019", "done");
-            Task task4 = new Task(4, 2, "In progress task", "Lorem ipsum dolor sit amet", 1, "01-01-2019", "progress");
-            Task task5 = new Task(5, 3, "Done task", "Lorem ipsum dolor sit amet", 1, "01-01-2019", "done");
+            Task task1 = new Task(1, 1, "To-do task", "Lorem ipsum dolor sit amet", 1, "01-01-2019", "todo", "rigor");
+            Task task2 = new Task(2, 1, "In progress task", "Lorem ipsum dolor sit amet", 1, "01-01-2019", "progress", "rigor");
+            Task task3 = new Task(3, 1, "Done task", "Lorem ipsum dolor sit amet", 1, "01-01-2019", "done", "design");
+            Task task4 = new Task(4, 2, "In progress task", "Lorem ipsum dolor sit amet", 1, "01-01-2019", "progress", "relevance");
+            Task task5 = new Task(5, 3, "Done task", "Lorem ipsum dolor sit amet", 1, "01-01-2019", "done", "design");
             
             // Create Subtasks
             Subtask subtask1 = new Subtask(1, 1, "To-do subtask", "Lorem ipsum dolor sit amet", 1, "01-01-2019", "todo");
