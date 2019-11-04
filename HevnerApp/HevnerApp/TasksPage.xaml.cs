@@ -20,6 +20,11 @@ namespace HevnerApp
             TaskListView.ItemsSource = tasks;
             Title = title;
 
+            if (tasks.Count != 0) return;
+            Label emptyPageLabel = new Label();
+            emptyPageLabel.Text = "Geen taken gevonden";
+            EmptyPagePlaceHolder.Children.Add(emptyPageLabel);
+
         }
 
         private void TaskListView_OnItemTapped(object sender, ItemTappedEventArgs e)

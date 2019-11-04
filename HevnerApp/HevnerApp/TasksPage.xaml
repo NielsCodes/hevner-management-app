@@ -29,18 +29,26 @@
     
     <ContentPage.Content>
 
+        <StackLayout Margin="0">
             
-        <ListView x:Name="TaskListView" ItemTapped="TaskListView_OnItemTapped">
+            <ListView x:Name="TaskListView" ItemTapped="TaskListView_OnItemTapped">
+                
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell 
+                            Text="{Binding Name}" 
+                            Detail="{Binding Description}"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                
+            </ListView>
             
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <TextCell 
-                        Text="{Binding Name}" 
-                        Detail="{Binding Description}"/>
-                </DataTemplate>
-            </ListView.ItemTemplate>
+            <StackLayout 
+                x:Name="EmptyPagePlaceHolder"
+                VerticalOptions="Center"/>
             
-        </ListView>
+        </StackLayout>
+            
             
 
     </ContentPage.Content>
