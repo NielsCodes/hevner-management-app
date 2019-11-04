@@ -19,6 +19,8 @@
         <e p="App.xaml" t="Include" />
         <e p="App.xaml.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
+        <e p="HelpPage.xaml" t="Include" />
+        <e p="HelpPage.xaml.cs" t="Include" />
         <e p="HevnerApp.csproj" t="IncludeRecursive" />
         <e p="MainPage.xaml" t="Include" />
         <e p="MainPage.xaml.cs" t="Include" />
