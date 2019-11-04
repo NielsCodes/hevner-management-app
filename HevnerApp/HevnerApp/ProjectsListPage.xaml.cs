@@ -44,8 +44,8 @@ namespace HevnerApp
         private void ProjectsListView_OnItemTapped(object sender, ItemTappedEventArgs e)
         {
             if (e.Item == null) return;
-            Project selectedItem = e.Item as Project;
-            int projectId = selectedItem.Id;
+            var selectedItem = e.Item as Project;
+            Navigation.PushAsync(new ProjectPage(selectedItem));
         }
         
     }

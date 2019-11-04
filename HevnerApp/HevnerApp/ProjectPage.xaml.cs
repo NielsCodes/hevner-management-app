@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using HevnerApp.Models;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Task = HevnerApp.Models.Task;
 
 namespace HevnerApp
 {
@@ -20,6 +21,11 @@ namespace HevnerApp
             {
                 throw new ArgumentException("Project argument not passed");
             }
+
+            List<Task> allTasks = project.Tasks;
+            
+            Children.Add(new TasksPage( "Alle taken" ,allTasks));
+            
         }
     }
 }
