@@ -6,7 +6,7 @@ namespace HevnerApp.DataAccessLayer
     public class DAL
     {
 
-        private List<Project> _projects = new List<Project>();
+        private static List<Project> _projects = new List<Project>();
         
         // Get all projects and related data
         public List<Project> GetData()

@@ -11,9 +11,9 @@ namespace HevnerApp
     public partial class App : Application
     {
         
-        private DAL _appDAL = new DAL();
+        private static DAL _appDAL = new DAL();
 
-        public DAL AppDal => _appDAL;
+        public static DAL AppDal => _appDAL;
 
         public App()
         {
