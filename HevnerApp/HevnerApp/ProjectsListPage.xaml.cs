@@ -19,7 +19,7 @@ namespace HevnerApp
             InitializeComponent();
             Title = "Projecten";
 
-            // TODO: 1. Implement custom template for three line items
+            // TODO: Implement custom template for three line items
             // ProjectsListView.ItemTemplate = new DataTemplate(typeof(CustomCell));
             
             ProjectsListView.ItemsSource = App.AppDal.Projects;

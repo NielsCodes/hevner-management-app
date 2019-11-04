@@ -23,28 +23,17 @@ namespace HevnerApp
             if (tasks.Count != 0) return;
             Label emptyPageLabel = new Label();
             emptyPageLabel.Text = "Geen taken gevonden";
+            emptyPageLabel.VerticalOptions = LayoutOptions.CenterAndExpand;
+            emptyPageLabel.HorizontalOptions = LayoutOptions.CenterAndExpand;
             EmptyPagePlaceHolder.Children.Add(emptyPageLabel);
 
         }
 
+        // TODO: Add toolbar links
         private void TaskListView_OnItemTapped(object sender, ItemTappedEventArgs e)
         {
             throw new NotImplementedException();
         }
-
-        private void AddTaskToolbarItem_OnClicked(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
-        private void ShowNotesToolbarItem_OnClicked(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
-        private void ShowHelpToolbarItem_OnClicked(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }
