@@ -10,7 +10,7 @@ namespace HevnerApp.Models
         private string _description;
         private string _startDate;
         private string _deadline;
-        private string _createdBy;
+        private int _createdBy;
         private string _createdAt;
         private bool _hasFinished;
 
@@ -30,7 +30,7 @@ namespace HevnerApp.Models
         }
         
         // constructor
-        public Project(int id, string name, string description, string startDate, string deadline, string createdBy, string createdAt, bool hasFinished)
+        public Project(int id, string name, string description, string startDate, string deadline, int createdBy, string createdAt, bool hasFinished)
         {
             _id = id;
             _name = name;
@@ -73,7 +73,7 @@ namespace HevnerApp.Models
             set => _deadline = value;
         }
 
-        public string CreatedBy
+        public int CreatedBy
         {
             get => _createdBy;
             set => _createdBy = value;
