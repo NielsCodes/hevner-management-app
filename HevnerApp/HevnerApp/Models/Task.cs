@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace HevnerApp.Models
 {
     public class Task
@@ -12,6 +14,21 @@ namespace HevnerApp.Models
         private string _createdAt;
         private string _status;
 
+        private List<Note> _notes = new List<Note>();
+        private List<Subtask> _subtasks = new List<Subtask>();
+
+        // Add new Note
+        public void AddNote(Note note)
+        {
+            _notes.Add(note);
+        }
+        
+        // Add new Subtask
+        public void AddSubtask(Subtask subtask)
+        {
+            _subtasks.Add(subtask);
+        }
+        
         // Constructor
         public Task(int id, int projectId, string name, string description, int createdBy, string createdAt, string status)
         {
@@ -23,7 +40,7 @@ namespace HevnerApp.Models
             _createdAt = createdAt;
             _status = status;
         }
-
+        
         // Getters and setters
         public int Id
         {
@@ -65,6 +82,18 @@ namespace HevnerApp.Models
         {
             get => _status;
             set => _status = value;
+        }
+
+        public List<Note> Notes
+        {
+            get => _notes;
+            set => _notes = value;
+        }
+
+        public List<Subtask> Subtasks
+        {
+            get => _subtasks;
+            set => _subtasks = value;
         }
     }
 }
