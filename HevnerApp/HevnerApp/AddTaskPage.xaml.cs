@@ -10,12 +10,14 @@ using Task = System.Threading.Tasks.Task;
 namespace HevnerApp
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class AddTask : ContentPage
+    public partial class AddTaskPage : ContentPage
     {
 
-        public AddTask(object parent)
+        public AddTaskPage(object parent)
         {
             InitializeComponent();
+
+            Title = "Taak toevoegen";
 
             List<string> cycleOptions = new List<string>();
             List<string> statusOptions = new List<string>();

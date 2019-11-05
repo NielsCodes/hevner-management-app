@@ -62,12 +62,12 @@ namespace HevnerApp
         
         private void AddTaskToolbarItem_OnClicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new AddTask(_project));
+            Navigation.PushAsync(new AddTaskPage(_project));
         }
 
         private void ShowNotesToolbarItem_OnClicked(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            Navigation.PushAsync(new NotesPage(_project.Notes));
         }
 
         private void ShowHelpToolbarItem_OnClicked(object sender, EventArgs e)
