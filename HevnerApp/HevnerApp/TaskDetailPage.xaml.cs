@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using HevnerApp.Models;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Task = HevnerApp.Models.Task;
@@ -29,7 +29,9 @@ namespace HevnerApp
 
         private void SubtaskListView_OnItemTapped(object sender, ItemTappedEventArgs e)
         {
-            throw new NotImplementedException();
+            if (e.Item == null) return;
+            var selectedItem = e.Item as Subtask;
+            Navigation.PushAsync(new SubtaskDetailPage(selectedItem));
         }
 
         private void ShowHelpToolbarItem_OnClicked(object sender, EventArgs e)
@@ -44,7 +46,7 @@ namespace HevnerApp
 
         private void AddSubTaskToolbarItem_OnClicked(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            Navigation.PushAsync(new AddSubtaskPage());
         }
     }
 }

@@ -20,6 +20,8 @@
         <e p="AddNotePage.xaml.cs" t="Include" />
         <e p="AddProjectPage.xaml" t="Include" />
         <e p="AddProjectPage.xaml.cs" t="Include" />
+        <e p="AddSubtaskPage.xaml" t="Include" />
+        <e p="AddSubtaskPage.xaml.cs" t="Include" />
         <e p="AddTaskPage.xaml" t="Include" />
         <e p="AddTaskPage.xaml.cs" t="Include" />
         <e p="App.xaml" t="Include" />
@@ -55,6 +57,8 @@
         <e p="ProjectPage.xaml.cs" t="Include" />
         <e p="ProjectsListPage.xaml" t="Include" />
         <e p="ProjectsListPage.xaml.cs" t="Include" />
+        <e p="SubtaskDetailPage.xaml" t="Include" />
+        <e p="SubtaskDetailPage.xaml.cs" t="Include" />
         <e p="TaskDetailPage.xaml" t="Include" />
         <e p="TaskDetailPage.xaml.cs" t="Include" />
         <e p="TasksPage.xaml" t="Include" />

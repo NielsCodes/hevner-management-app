@@ -28,8 +28,7 @@ namespace HevnerApp
             EmptyPagePlaceHolder.Children.Add(emptyPageLabel);
 
         }
-
-        // TODO: Add toolbar links
+        
         private void TaskListView_OnItemTapped(object sender, ItemTappedEventArgs e)
         {
             if (e.Item == null) return;

@@ -2,17 +2,10 @@
 
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="HevnerApp.TaskDetailPage">
-    
+             x:Class="HevnerApp.SubtaskDetailPage">
     <ContentPage.ToolbarItems>
         
         <!-- Secondary order to appear as context menu -->
-        <ToolbarItem 
-            Text="Subtaak toevoegen" 
-            Order="Secondary"
-            x:Name="AddProjectToolbarItem"
-            Clicked="AddSubTaskToolbarItem_OnClicked"/>
-        
         <ToolbarItem 
             Text="Notities" 
             Order="Secondary"
@@ -37,23 +30,6 @@
             <Picker 
                 x:Name="StatusPicker"
                 Title="Verander status"/>
-
-            <Label Text="Subtaken"></Label>            
-            <ListView
-                x:Name="SubtaskListView" 
-                ItemTapped="SubtaskListView_OnItemTapped">
-                
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        
-                        <TextCell 
-                            Text="{Binding name}" 
-                            Detail="{Binding Description}"/>
-                        
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-                
-            </ListView>
             
         </StackLayout>
     </ContentPage.Content>
