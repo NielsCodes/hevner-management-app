@@ -11,7 +11,7 @@
             Text="Subtaak toevoegen" 
             Order="Secondary"
             x:Name="AddProjectToolbarItem"
-            Clicked="AddTaskToolbarItem_OnClicked"/>
+            Clicked="AddSubTaskToolbarItem_OnClicked"/>
         
         <ToolbarItem 
             Text="Notities" 

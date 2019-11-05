@@ -13,11 +13,15 @@ namespace HevnerApp
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class TaskDetailPage : ContentPage
     {
+
+        private Task _task;
+        
         public TaskDetailPage(Task task)
         {
             InitializeComponent();
 
             Title = task.Name;
+            _task = task;
             descriptionLabel.Text = task.Description;
 
             SubtaskListView.ItemsSource = task.Subtasks;
@@ -30,7 +34,17 @@ namespace HevnerApp
 
         private void ShowHelpToolbarItem_OnClicked(object sender, EventArgs e)
         {
-//            Navigation
+            Navigation.PushAsync(new HelpPage());
+        }
+
+        private void ShowNotesToolbarItem_OnClicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new NotesPage(_task.Notes));
+        }
+
+        private void AddSubTaskToolbarItem_OnClicked(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
     }
 }
