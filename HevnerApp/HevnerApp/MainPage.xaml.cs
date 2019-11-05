@@ -24,7 +24,15 @@ namespace HevnerApp
 
         private void LogInButton_OnClicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new ProjectsListPage());
+
+            bool emailEmpty = string.IsNullOrEmpty(EmailEntry.Text);
+            bool passEmpty = string.IsNullOrEmpty(PassEntry.Text);
+            
+            // Navigation is only performed when values are entered
+            if (!emailEmpty && !passEmpty)
+            {
+                Navigation.PushAsync(new ProjectsListPage());
+            }
         }
 
 

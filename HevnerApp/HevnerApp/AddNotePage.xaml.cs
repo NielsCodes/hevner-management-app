@@ -21,8 +21,11 @@ namespace HevnerApp
 
         private void AddNoteButton_OnClicked(object sender, EventArgs e)
         {
+
+            bool noteEmpty = string.IsNullOrEmpty(NoteEditor.Text);
+            
             // Check whether field was filled in
-            if (NoteEditor.Text != "")
+            if (!noteEmpty)
             {
                 Navigation.PopAsync();
             }

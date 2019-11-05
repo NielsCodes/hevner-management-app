@@ -20,10 +20,19 @@ namespace HevnerApp
 
         private void AddProjectButton_OnClicked(object sender, EventArgs e)
         {
-            // Logic to add project to database
 
-            // Redirect user back to projects overview
-            Navigation.PopAsync();
+            bool nameEmpty = string.IsNullOrEmpty(ProjectNameEntry.Text);
+            bool descriptionEmpty = string.IsNullOrEmpty(ProjectDescriptionEditor.Text);
+            
+            // Only execute if fields are filled in
+            if (!nameEmpty && !descriptionEmpty)
+            {
+                
+                // Logic to add project to database
+                
+                // Redirect user back to projects overview
+                Navigation.PopAsync();
+            }
         }
     }
 }

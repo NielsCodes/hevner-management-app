@@ -26,8 +26,14 @@ namespace HevnerApp
 
         private void ResetPasswordButton_OnClicked(object sender, EventArgs e)
         {
+
+            bool emailEmpty = string.IsNullOrEmpty(ResetPasswordEmailEntry.Text);
+            
             // Return to login page
-            Navigation.PopToRootAsync();
+            if (!emailEmpty)
+            {
+                Navigation.PopToRootAsync();
+            }
         }
     }
 }

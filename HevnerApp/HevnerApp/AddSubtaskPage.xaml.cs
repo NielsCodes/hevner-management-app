@@ -21,7 +21,11 @@ namespace HevnerApp
 
         private void AddSubtaskButton_OnClicked(object sender, EventArgs e)
         {
-            if (SubtaskNameEntry.Text != "" && SubtaskDescriptionEntry.Text != "" && SubtaskStatusPicker.SelectedIndex != -1)
+
+            bool nameEmpty = string.IsNullOrEmpty(SubtaskNameEntry.Text);
+            bool descriptionEmpty = string.IsNullOrEmpty(SubtaskDescriptionEntry.Text);
+            
+            if (!nameEmpty && !descriptionEmpty && SubtaskStatusPicker.SelectedIndex != -1)
             {
                 Navigation.PopAsync();
             }
