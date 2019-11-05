@@ -8,24 +8,24 @@
             
             <Label 
                 x:Name="TaskNameLabel" 
-                Text="Taaknaam ⃰"/>
+                Text="Taaknaam  ⃰"/>
             <Entry x:Name="TaskNameEntry"/>
             
             <Label
                 x:Name="TaskDescriptionLabel"
-                Text="Omschrijving ⃰"/>
+                Text="Omschrijving  ⃰"/>
             <Entry x:Name="TaskDescriptionEntry"/>
             
             <Label
                 x:Name="TaskCycleLabel"
-                Text="Cyclus ⃰"/>
+                Text="Cyclus  ⃰"/>
             <Picker 
                 x:Name="TaskCyclePicker"
                 Title="Kies de cyclus"/>
             
             <Label
                 x:Name="TaskStatusLabel"
-                Text="Status ⃰"/>
+                Text="Status  ⃰"/>
             <Picker 
                 x:Name="TaskStatusPicker" 
                 Title="Kies de status"/>
