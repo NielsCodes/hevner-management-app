@@ -16,18 +16,57 @@
     </e>
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="HevnerApp/HevnerApp" t="IncludeRecursive">
+        <e p="AddNotePage.xaml" t="Include" />
+        <e p="AddNotePage.xaml.cs" t="Include" />
+        <e p="AddProjectPage.xaml" t="Include" />
+        <e p="AddProjectPage.xaml.cs" t="Include" />
+        <e p="AddSubtaskPage.xaml" t="Include" />
+        <e p="AddSubtaskPage.xaml.cs" t="Include" />
+        <e p="AddTaskPage.xaml" t="Include" />
+        <e p="AddTaskPage.xaml.cs" t="Include" />
         <e p="App.xaml" t="Include" />
         <e p="App.xaml.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
+        <e p="DataAccessLayer" t="Include">
+          <e p="DAL.cs" t="Include" />
+        </e>
+        <e p="FinishedProjectsPage.xaml" t="Include" />
+        <e p="FinishedProjectsPage.xaml.cs" t="Include" />
+        <e p="HelpPage.xaml" t="Include" />
+        <e p="HelpPage.xaml.cs" t="Include" />
         <e p="HevnerApp.csproj" t="IncludeRecursive" />
         <e p="MainPage.xaml" t="Include" />
         <e p="MainPage.xaml.cs" t="Include" />
+        <e p="Models" t="Include">
+          <e p="Note.cs" t="Include" />
+          <e p="Project.cs" t="Include" />
+          <e p="Subtask.cs" t="Include" />
+          <e p="Task.cs" t="Include" />
+          <e p="User.cs" t="Include" />
+        </e>
+        <e p="NotesPage.xaml" t="Include" />
+        <e p="NotesPage.xaml.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netstandard2.0" t="Include">
               <e p="HevnerApp.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
+        </e>
+        <e p="PasswordResetPage.xaml" t="Include" />
+        <e p="PasswordResetPage.xaml.cs" t="Include" />
+        <e p="ProjectPage.xaml" t="Include" />
+        <e p="ProjectPage.xaml.cs" t="Include" />
+        <e p="ProjectsListPage.xaml" t="Include" />
+        <e p="ProjectsListPage.xaml.cs" t="Include" />
+        <e p="SubtaskDetailPage.xaml" t="Include" />
+        <e p="SubtaskDetailPage.xaml.cs" t="Include" />
+        <e p="TaskDetailPage.xaml" t="Include" />
+        <e p="TaskDetailPage.xaml.cs" t="Include" />
+        <e p="TasksPage.xaml" t="Include" />
+        <e p="TasksPage.xaml.cs" t="Include" />
+        <e p="Templates" t="Include">
+          <e p="CustomCell.cs" t="Include" />
         </e>
       </e>
       <e p="HevnerApp/HevnerApp.Android" t="IncludeRecursive">

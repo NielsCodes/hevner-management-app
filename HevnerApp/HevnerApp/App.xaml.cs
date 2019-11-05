@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using HevnerApp.DataAccessLayer;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -8,12 +10,24 @@ namespace HevnerApp
 {
     public partial class App : Application
     {
+        
+        private static DAL _appDAL = new DAL();
+
+        public static DAL AppDal => _appDAL;
+
         public App()
         {
             InitializeComponent();
+            _appDAL.PopulateTestData();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new MainPage())
+            {
+                BarTextColor = Color.White
+            };
+            
         }
+        
+        
 
         protected override void OnStart()
         {

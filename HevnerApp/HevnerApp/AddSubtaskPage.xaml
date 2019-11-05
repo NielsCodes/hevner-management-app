@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HevnerApp.AddSubtaskPage">
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <Label 
+                x:Name="SubtaskNameLabel" 
+                Text="subtaaknaam  ⃰"/>
+            <Entry x:Name="SubtaskNameEntry"/>
+            
+            <Label
+                x:Name="SubtaskDescriptionLabel"
+                Text="Omschrijving  ⃰"/>
+            <Entry x:Name="SubtaskDescriptionEntry"/>
+            
+            <Label
+                x:Name="SubtaskStatusLabel"
+                Text="Status  ⃰"/>
+            <Picker 
+                x:Name="SubtaskStatusPicker" 
+                Title="Kies de status"/>
+            
+            <Button 
+                x:Name="AddSubtaskButton"
+                Text="Subtaak toevoegen"
+                Clicked="AddSubtaskButton_OnClicked"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

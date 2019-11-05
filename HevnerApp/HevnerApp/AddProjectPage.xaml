@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HevnerApp.AddProjectPage">
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <Label Text="Projectnaam"/>
+            <Entry
+                x:Name="ProjectNameEntry"
+                Placeholder="Mijn onderzoeksproject" />
+            
+            <Editor 
+                x:Name="ProjectDescriptionEditor" 
+                Placeholder="Beschrijving van het onderwerp" />
+
+            <Label Text="Startdatum" />
+            <DatePicker x:Name="StartDatePicker"/>
+            
+            <Label Text="Deadline" />
+            <DatePicker x:Name="DeadlineDatePicker"/>
+            
+            <Button 
+                Text="Project toevoegen"
+                x:Name="AddProjectButton"
+                Clicked="AddProjectButton_OnClicked"
+                Margin="0, 40, 0, 0"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HevnerApp.SubtaskDetailPage">
+    <ContentPage.ToolbarItems>
+        
+        <!-- Secondary order to appear as context menu -->
+        <ToolbarItem 
+            Text="Notities" 
+            Order="Secondary"
+            x:Name="ShowCompletedProjectsToolbarItem"
+            Clicked="ShowNotesToolbarItem_OnClicked"/>
+        
+        <ToolbarItem 
+            Text="Help" 
+            Order="Secondary"
+            x:Name="ShowHelpToolbarItem"
+            Clicked="ShowHelpToolbarItem_OnClicked"/>
+        
+    </ContentPage.ToolbarItems>
+    
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <Label Text="Omschrijving"/>
+            <Label x:Name="descriptionLabel"/>
+            
+            <Label Text="Status"/>
+            <Picker 
+                x:Name="StatusPicker"
+                Title="Verander status"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
