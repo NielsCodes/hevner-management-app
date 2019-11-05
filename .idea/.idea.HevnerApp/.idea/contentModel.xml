@@ -16,10 +16,12 @@
     </e>
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="HevnerApp/HevnerApp" t="IncludeRecursive">
+        <e p="AddNotePage.xaml" t="Include" />
+        <e p="AddNotePage.xaml.cs" t="Include" />
         <e p="AddProjectPage.xaml" t="Include" />
         <e p="AddProjectPage.xaml.cs" t="Include" />
-        <e p="AddTask.xaml" t="Include" />
-        <e p="AddTask.xaml.cs" t="Include" />
+        <e p="AddTaskPage.xaml" t="Include" />
+        <e p="AddTaskPage.xaml.cs" t="Include" />
         <e p="App.xaml" t="Include" />
         <e p="App.xaml.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
@@ -38,6 +40,8 @@
           <e p="Task.cs" t="Include" />
           <e p="User.cs" t="Include" />
         </e>
+        <e p="NotesPage.xaml" t="Include" />
+        <e p="NotesPage.xaml.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netstandard2.0" t="Include">
