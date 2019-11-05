@@ -21,5 +21,15 @@ namespace HevnerApp
             NotesListView.ItemsSource = notes;
 
         }
+
+        private void ShowHelpToolbarItem_OnClicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new HelpPage());
+        }
+
+        private void AddNoteToolbarItem_OnClicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new AddNotePage());
+        }
     }
 }

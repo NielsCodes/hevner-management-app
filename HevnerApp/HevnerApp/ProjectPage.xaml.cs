@@ -72,7 +72,7 @@ namespace HevnerApp
 
         private void ShowHelpToolbarItem_OnClicked(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            Navigation.PushAsync(new HelpPage());
         }
         
     }

@@ -3,6 +3,25 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HevnerApp.NotesPage">
+    
+    <ContentPage.ToolbarItems>
+        
+        <!-- Secondary order to appear as context menu -->
+        <ToolbarItem 
+            Text="Notitie toevoegen" 
+            Order="Secondary"
+            x:Name="AddProjectToolbarItem"
+            Clicked="AddNoteToolbarItem_OnClicked"/>
+        
+        <ToolbarItem 
+            Text="Help" 
+            Order="Secondary"
+            x:Name="ShowHelpToolbarItem"
+            Clicked="ShowHelpToolbarItem_OnClicked"/>
+        
+    </ContentPage.ToolbarItems>
+    
+    
     <ContentPage.Content>
         <ListView x:Name="NotesListView">
             <ListView.ItemTemplate>
