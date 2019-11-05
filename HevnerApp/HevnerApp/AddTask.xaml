@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HevnerApp.AddTask">
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <Label 
+                x:Name="TaskNameLabel" 
+                Text="Taaknaam  ⃰"/>
+            <Entry x:Name="TaskNameEntry"/>
+            
+            <Label
+                x:Name="TaskDescriptionLabel"
+                Text="Omschrijving  ⃰"/>
+            <Entry x:Name="TaskDescriptionEntry"/>
+            
+            <Label
+                x:Name="TaskCycleLabel"
+                Text="Cyclus  ⃰"/>
+            <Picker 
+                x:Name="TaskCyclePicker"
+                Title="Kies de cyclus"/>
+            
+            <Label
+                x:Name="TaskStatusLabel"
+                Text="Status  ⃰"/>
+            <Picker 
+                x:Name="TaskStatusPicker" 
+                Title="Kies de status"/>
+            
+            <Button 
+                x:Name="AddTaskButton"
+                Text="Taak toevoegen"
+                Clicked="AddTaskButton_OnClicked"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

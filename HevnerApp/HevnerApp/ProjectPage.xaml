@@ -4,4 +4,27 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HevnerApp.ProjectPage">
     
+    <TabbedPage.ToolbarItems>
+        
+        <!-- Secondary order to appear as context menu -->
+        <ToolbarItem 
+            Text="Taak toevoegen" 
+            Order="Secondary"
+            x:Name="AddProjectToolbarItem"
+            Clicked="AddTaskToolbarItem_OnClicked"/>
+        
+        <ToolbarItem 
+            Text="Notities" 
+            Order="Secondary"
+            x:Name="ShowCompletedProjectsToolbarItem"
+            Clicked="ShowNotesToolbarItem_OnClicked"/>
+        
+        <ToolbarItem 
+            Text="Help" 
+            Order="Secondary"
+            x:Name="ShowHelpToolbarItem"
+            Clicked="ShowHelpToolbarItem_OnClicked"/>
+        
+    </TabbedPage.ToolbarItems>
+    
 </TabbedPage>

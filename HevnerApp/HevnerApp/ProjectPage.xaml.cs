@@ -13,6 +13,8 @@ namespace HevnerApp
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ProjectPage : TabbedPage
     {
+        private Project _project;
+        
         public ProjectPage(Project project)
         {
             InitializeComponent();
@@ -23,6 +25,7 @@ namespace HevnerApp
             }
 
             Title = project.Name;
+            _project = project;
             
             List<Task> allTasks = project.Tasks;
             List<Task> relevanceTasks = new List<Task>();
@@ -56,5 +59,21 @@ namespace HevnerApp
             }
             
         }
+        
+        private void AddTaskToolbarItem_OnClicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new AddTask(_project));
+        }
+
+        private void ShowNotesToolbarItem_OnClicked(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void ShowHelpToolbarItem_OnClicked(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+        
     }
 }

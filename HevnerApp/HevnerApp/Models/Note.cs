@@ -10,6 +10,13 @@ namespace HevnerApp.Models
         private int _createdBy;
         private string _createdAt;
         
+        public enum ParentTypes
+        {
+            Project,
+            Task,
+            Subtask
+        };
+        
         // Constructor
         public Note(int id, int parentId, string parentType, string text, int createdBy, string createdAt)
         {
