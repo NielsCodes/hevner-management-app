@@ -32,7 +32,9 @@ namespace HevnerApp
         // TODO: Add toolbar links
         private void TaskListView_OnItemTapped(object sender, ItemTappedEventArgs e)
         {
-            throw new NotImplementedException();
+            if (e.Item == null) return;
+            var selectedItem = e.Item as Task;
+            Navigation.PushAsync(new TaskDetailPage(selectedItem));
         }
         
     }

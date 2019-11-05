@@ -55,6 +55,8 @@
         <e p="ProjectPage.xaml.cs" t="Include" />
         <e p="ProjectsListPage.xaml" t="Include" />
         <e p="ProjectsListPage.xaml.cs" t="Include" />
+        <e p="TaskDetailPage.xaml" t="Include" />
+        <e p="TaskDetailPage.xaml.cs" t="Include" />
         <e p="TasksPage.xaml" t="Include" />
         <e p="TasksPage.xaml.cs" t="Include" />
         <e p="Templates" t="Include">
