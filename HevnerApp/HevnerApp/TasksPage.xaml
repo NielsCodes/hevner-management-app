@@ -8,7 +8,9 @@
 
         <StackLayout Margin="0">
             
-            <ListView x:Name="TaskListView" ItemTapped="TaskListView_OnItemTapped">
+            <ListView 
+                x:Name="TaskListView" 
+                ItemTapped="TaskListView_OnItemTapped">
                 
                 <ListView.ItemTemplate>
                     <DataTemplate>
