@@ -13,6 +13,9 @@ namespace HevnerApp
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ProjectsListPage : ContentPage
     {
+        
+        private List<Project> _currentProjects = new List<Project>();
+        private List<Project> _finishedProjects = new List<Project>();
 
         public ProjectsListPage()
         {
@@ -20,9 +23,21 @@ namespace HevnerApp
             Title = "Projecten";
 
             // TODO: Implement custom template for three line items
-            // ProjectsListView.ItemTemplate = new DataTemplate(typeof(CustomCell));
+            // ProjectsListView.ItemTemplate = new DataTemplate(typeof(CustomCell))
+
+            foreach (Project project in App.AppDal.Projects)
+            {
+                if (project.HasFinished)
+                {
+                    _finishedProjects.Add(project);
+                }
+                else
+                {
+                    _currentProjects.Add(project);
+                }
+            }
             
-            ProjectsListView.ItemsSource = App.AppDal.Projects;
+            ProjectsListView.ItemsSource = _currentProjects;
 
         }
 
@@ -33,7 +48,7 @@ namespace HevnerApp
 
         private void ShowCompletedProjectsToolbarItem_OnClicked(object sender, EventArgs e)
         {
-            throw new NotImplementedException("Previously completed projects page not yet implemented");
+            Navigation.PushAsync(new FinishedProjectsPage(_finishedProjects));
         }
 
         private void ShowHelpToolbarItem_OnClicked(object sender, EventArgs e)
