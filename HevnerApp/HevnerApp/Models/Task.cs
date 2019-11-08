@@ -7,10 +7,10 @@ namespace HevnerApp.Models
 
         // Properties
         private int _id;
-        private int _projectId;
+        private Project _parentProject;
         private string _name;
         private string _description;
-        private int _createdBy;
+        private User _createdBy;
         private string _createdAt;
         private string _status;
         private string _cycle;
@@ -30,10 +30,10 @@ namespace HevnerApp.Models
         }
         
         // Constructor
-        public Task(int id, int projectId, string name, string description, int createdBy, string createdAt, string status, string cycle)
+        public Task(int id, Project parentProject, string name, string description, User createdBy, string createdAt, string status, string cycle)
         {
             _id = id;
-            _projectId = projectId;
+            _parentProject = parentProject;
             _name = name;
             _description = description;
             _createdBy = createdBy;
@@ -49,10 +49,10 @@ namespace HevnerApp.Models
             set => _id = value;
         }
 
-        public int ProjectId
+        public Project ParentProject
         {
-            get => _projectId;
-            set => _projectId = value;
+            get => _parentProject;
+            set => _parentProject = value;
         }
 
         public string Name
@@ -67,7 +67,7 @@ namespace HevnerApp.Models
             set => _description = value;
         }
 
-        public int CreatedBy
+        public User CreatedBy
         {
             get => _createdBy;
             set => _createdBy = value;
