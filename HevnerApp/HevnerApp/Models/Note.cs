@@ -7,7 +7,7 @@ namespace HevnerApp.Models
         private int _parentId;
         private string _parentType;
         private string _text;
-        private int _createdBy;
+        private User _createdBy;
         private string _createdAt;
         
         public enum ParentTypes
@@ -18,7 +18,7 @@ namespace HevnerApp.Models
         };
         
         // Constructor
-        public Note(int id, int parentId, string parentType, string text, int createdBy, string createdAt)
+        public Note(int id, int parentId, string parentType, string text, User createdBy, string createdAt)
         {
             _id = id;
             _parentId = parentId;
@@ -53,7 +53,7 @@ namespace HevnerApp.Models
             set => _text = value;
         }
 
-        public int CreatedBy
+        public User CreatedBy
         {
             get => _createdBy;
             set => _createdBy = value;

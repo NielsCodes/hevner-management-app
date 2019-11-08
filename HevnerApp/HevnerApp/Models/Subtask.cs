@@ -6,10 +6,10 @@ namespace HevnerApp.Models
     {
         // Properties
         private int _id;
-        private int _taskId;
+        private Task _parentTask;
         private string _name;
         private string _description;
-        private int _createdBy;
+        private User _createdBy;
         private string _createdAt;
         private string _status;
         
@@ -22,10 +22,10 @@ namespace HevnerApp.Models
         }
 
         // Constructor
-        public Subtask(int id, int taskId, string name, string description, int createdBy, string createdAt, string status)
+        public Subtask(int id, Task parentTask, string name, string description, User createdBy, string createdAt, string status)
         {
             _id = id;
-            _taskId = taskId;
+            _parentTask = parentTask;
             _name = name;
             _description = description;
             _createdBy = createdBy;
@@ -40,10 +40,10 @@ namespace HevnerApp.Models
             set => _id = value;
         }
 
-        public int TaskId
+        public Task TaskId
         {
-            get => _taskId;
-            set => _taskId = value;
+            get => _parentTask;
+            set => _parentTask = value;
         }
 
         public string Name
@@ -58,7 +58,7 @@ namespace HevnerApp.Models
             set => _description = value;
         }
 
-        public int CreatedBy
+        public User CreatedBy
         {
             get => _createdBy;
             set => _createdBy = value;
